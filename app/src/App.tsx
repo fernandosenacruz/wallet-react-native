@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components/native';
 import AppLoading from "expo-app-loading";

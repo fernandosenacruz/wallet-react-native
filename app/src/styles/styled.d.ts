@@ -1,10 +1,5 @@
 import 'styled-components';
-import { COLORS, FONTS } from './theme';
-
-const theme = {
-    COLORS,
-    FONTS
-}
+import theme from './theme';
 
 declare module 'styled-components' {
     type ThemeType = typeof theme

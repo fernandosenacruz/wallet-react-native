@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import SocialButton from '../../components/social-button/SocialButton';
 
 import google from '../../assets/img/icon-google.png';
@@ -14,8 +14,13 @@ import {
   Description,
   ViewButtom,
  } from './styles';
+import { GenericInput } from '../../components/input';
+import { useTheme } from 'styled-components/native';
+import Button from '../../components/button/Button';
 
 const Login: React.FC = () => {
+  const { COLORS } = useTheme();
+
   return (
     <SafeAreaView>
       <Container>
@@ -31,13 +36,31 @@ const Login: React.FC = () => {
         </ContantHeader>
 
         <ContentBody>
+          <GenericInput 
+            leftIcon 
+            iconLeftName='mail-outline'
+            iconSize={25}
+            iconColor={COLORS.BLACK}
+            placeholder='E-mail'
+            placeholderTextColor={COLORS.GRAY5}
+          />
+          <GenericInput
+            leftIcon 
+            iconLeftName='lock-closed-outline'
+            rightIcon
+            iconRightName='eye-outline'
+            iconSize={25}
+            iconColor={COLORS.BLACK}
+            placeholder='Senha'
+            placeholderTextColor={COLORS.GRAY5}
+          />
 
+          <Button title='Entrar' onPress={() => {}}/>
         </ContentBody>
 
         <ContentFooter>
 
         </ContentFooter>
-        <Text>Login</Text>
       </Container>
     </SafeAreaView>
   );

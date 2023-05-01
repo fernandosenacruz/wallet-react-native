@@ -1,5 +1,3 @@
-import { COLORS, FONTS } from './theme';
-
-const theme = { COLORS, FONTS }
+import theme from './theme';
 
 export default theme;

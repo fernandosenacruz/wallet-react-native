@@ -4,8 +4,8 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.View `
   width: 100vw;
   height: 100vh;
-  padding: ${RFValue(10)}px;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUNDDARK };
+  padding: ${RFValue(20)}px;
+  background-color: ${({ theme }) => theme.COLORS.BLACK };
 `;
 
 export const ContantHeader = styled.View `
